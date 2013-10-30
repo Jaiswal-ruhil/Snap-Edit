@@ -1,0 +1,63 @@
+.\" Man Page for the line editor Snap-Edit.
+.TH Snap-Edit 1 "October 2013" snap-edit-0.1 "Snap-Edit Manual"
+
+.SH NAME
+
+.P
+Snap-Edit - The stupid line Editor.
+
+.SH AUTHOR
+
+.P
+sit was written by Ravi Kumar <http://upman.github.io> 
+
+.SH SYNOPSIS
+.P
+sit <command> l<line-number> |<string>
+
+.SH DESCRIPTION
+.P
+A simple Line-Editor written in C with no heed to efficiency.
+
+.SH COMMANDS
+
+.SS replace
+.P
+Erase all text at line
+.I line-number
+from  l<line-number> and insert
+.I
+string
+from |<string>
+
+.SS append
+.P
+Append
+.I
+string
+to the line
+.I
+line-number.
+
+.SS delete
+.P
+Delete the line
+.I
+line-number.
+
+.SS write
+.P
+Write buffer onto file.
+
+.SS print
+.P
+View the buffer.
+
+
+.SS help
+.P
+Display help for sit.
+
+.SS quit
+.P
+Quit sit.
