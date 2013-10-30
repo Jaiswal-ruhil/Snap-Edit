@@ -12,20 +12,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "sit.h"
-#define INITIAL_CHAR_MAX 100
-#define COMMAND_ERROR 1
-#define DELETE 2
-#define APPEND 3
-#define REPLACE 4
-#define QUIT 5
-#define WRITE 6
-#define PRINT 7
-#define LINE_ERROR 8
-#define HELP 9
 
-#define LINES_AT_START 30 
-#define LINE_NOT_BUILT -1
 
 // Add functionality to offer to save current buffer before exit -- Done
 
@@ -44,29 +31,7 @@
 		exit(EXIT_FAILURE); 	\
 	}
 
-
-
-
-
-typedef struct line {
-	int maxsize;                 // Stores max number of characters the line can hold at the current time
-	int currentsize;	     // Stores the number of characters in the line
-	int thisline;		     // Stores the line number
-	char *linestring;	     // pointer to the string which holds the text on the line (string does\ not end with '\n')
-	void *next;		     // pointer to the next line struct
-} line;
-
-
-
-
-int command=0; //strores the command(integer-mapped) after processing the raw input command
-int linenum=0; // stores the line number the command is referring to
-line *lastline; //stores a pointer to the last line(structure) in the buffer
-line *buffer; //stores the pointer to the first line in the buffer
-char filename[32]; //stores the current filename
-int savebeforequit; // 1 if changes have been made to the buffer since the last write
-
-
+#include "sit.h"
 
 
 //Function declarations
