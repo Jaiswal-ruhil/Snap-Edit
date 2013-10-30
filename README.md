@@ -5,7 +5,7 @@ Uses a linked list type Data-Structure.
 
 ##Installation##
 
-'''
+```
 
 #Download the zip of this repo, then unzip with
 mv Snap-Edit-master.zip Snap-Edit.zip
@@ -24,7 +24,7 @@ cd Snap-Edit
 #install with root permissions (sudo or su)
 sudo make install
 
-'''
+```
 
 I hereby place it under public domain, do what you will with it.
 Just don't hold me responsible for anything.
