@@ -1,7 +1,7 @@
 Snap-Edit
 =========
 A bare bones line-by-line text editor with a command-line interface, written in C.
-Uses a linked list type Data-Structure. Written by Ravi Kumar <upman16@gmail.com>
+Uses a linked list type Data-Structure. Written by Ravi Kumar `<upman16@gmail.com>`
 
 ##Installation##
 
